@@ -112,8 +112,8 @@ body {
 
 input[type="checkbox"] {
   position: relative;
-  border: 1px solid #000;
-  border-radius: 0;
+  border: 1px solid var(--bg_gray);
+  border-radius: 3px;
   background: none;
   cursor: pointer;
   line-height: 0;
@@ -121,8 +121,8 @@ input[type="checkbox"] {
   outline: 0;
   padding: 0 !important;
   vertical-align: text-top;
-  height: 18px;
-  width: 18px;
+  height: 22px;
+  width: 22px;
   -webkit-appearance: none;
   opacity: 0.8;
 }
@@ -132,7 +132,8 @@ input[type="checkbox"]:hover {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #000;
+  background-color: var(--primary);
+  border-color: var(--primary);
   opacity: 1;
 }
 

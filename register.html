@@ -206,7 +206,7 @@
     <section class="loginWrapper">
       <div class="container">
         <div
-          class="py-8 sm:py-12 md:py-24 lg:py-48 grid grid-cols-1 md:grid-cols-2 items-center"
+          class="py-8 sm:py-12 md:py-18 lg:py-36 grid grid-cols-1 md:grid-cols-2 items-center"
         >
           <div
             class="text-center md:text-left pb-8 sm:pb-10 md:pb-20 md:pb-0 md:pr-20"
@@ -223,7 +223,7 @@
           <div class="flex flex-wrap justify-center">
             <div class="w-full">
               <h4 class="font-title text-2xl text-primary text-center mb-9">
-                Sign in to your account
+                Create new account
               </h4>
               <button
                 type="button"
@@ -236,35 +236,80 @@
               >
                 <p class="mx-4 mb-0 text-center text-xs text-dark_gray">OR</p>
               </div>
-              <div class="w-full grid grid-cols-1 gap-4">
-                <div>
+              <div class="w-full grid grid-cols-2 gap-4">
+                <div class="col-span-1">
+                  <input
+                    type="text"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-span-1">
+                  <input
+                    type="text"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="col-span-2">
                   <input
                     type="email"
                     class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
                     placeholder="Email"
                   />
                 </div>
-                <div>
+                <div class="col-span-1">
                   <input
                     type="password"
                     class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
                     placeholder="Password"
                   />
                 </div>
-                <button type="button" class="btn btn-primary text-white">
-                  Sign In
+                <div class="col-span-1">
+                  <input
+                    type="password"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <div class="col-span-2 mt-4 space-y-2">
+                  <div class="checkbox px-2">
+                    <input
+                      id="terms-condition"
+                      name="Terms & Condition"
+                      type="checkbox"
+                      value="yes"
+                    />
+                    <label for="terms-condition" class="text-secondarydark"
+                      >I agree to the Terms & Conditions</label
+                    >
+                  </div>
+
+                  <div class="checkbox px-2">
+                    <input
+                      id="privacy-policy"
+                      name="Privacy Policy"
+                      type="checkbox"
+                      value="yes"
+                    />
+                    <label for="privacy-policy" class="text-secondarydark"
+                      >I agree to the Privacy Policy</label
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="col-span-2 btn btn-primary text-white"
+                >
+                  Sign Up
                 </button>
               </div>
-              <div class="w-full mt-4 flex justify-center gap-12">
+              <div class="w-full mt-4 flex justify-center gap-1">
+                <span class="text-xs sm:text-base">Have an account?</span>
                 <a
                   href="#"
                   class="text-xs sm:text-base text-secondarylight hover:text-primary"
-                  >Create an account</a
-                >
-                <a
-                  href="#"
-                  class="text-xs sm:text-base text-secondarylight hover:text-primary"
-                  >Forgot Password?</a
+                  >Sign in here</a
                 >
               </div>
             </div>
