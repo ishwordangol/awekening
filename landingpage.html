@@ -40,7 +40,36 @@
   </head>
 
   <body>
-    <section class="relative copyright py-2.5 bg-primarylight">
+    <section class="relative h-screen">
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <img
+          src="assets/images/landing-logo.svg"
+          alt="Awekening Logo"
+          class="w-[600px] h-[600px]"
+        />
+      </div>
+      <div
+        class="w-full text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[704px]"
+      >
+        <h1
+          class="font-title text-primarylight text-3xl md:text-4xl tracking-wider"
+        >
+          Lorem ipsum dolor sit amet
+        </h1>
+        <h2 class="font-semibold text-xl md:text-2xl text-secondarydark mt-2">
+          consectetur adipiscing elit, sed do eiusmod tempor
+        </h2>
+        <div class="w-full flex gap-6 mt-14">
+          <button type="button" class="w-full btn btn-primary text-white">
+            Go to thetahealing
+          </button>
+          <button type="button" class="w-full btn btn-primary text-white">
+            Go to Wellbeing Events
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="w-full fixed bottom-0 copyright py-2.5 bg-primarylight">
       <div class="container">
         <div
           class="inline-grid grid-cols-1 sm:grid-cols-2 w-full gap-2 sm:gap-0"
