@@ -57,7 +57,7 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 20px;
+  padding: 14px 20px;
   font-size: 12px;
   text-transform: uppercase;
   border-radius: 94px;
@@ -78,6 +78,7 @@ body {
     rgba(148, 114, 187, 1) 0%,
     rgba(155, 208, 198, 1) 100%
   );
+  border: 2px solid;
 }
 
 .btn-primary:hover {
@@ -89,6 +90,21 @@ body {
   );
 }
 
+.btn-white {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(60deg, #7a56a4, #9bd0c6) border-box;
+  border: 2px solid transparent;
+}
+
+.btn-white:hover {
+  background: rgb(62, 146, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 146, 130, 1) 0%,
+    rgba(98, 53, 151, 1) 100%
+  );
+  color: #fff;
+}
 .checkbox {
   display: flex;
   align-items: center;
