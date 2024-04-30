@@ -82,7 +82,7 @@
 
 .menu-wrapper.visible {
   position: fixed;
-  height: 100vh;
+  height: 100dvh;
   top: 0;
   right: 0;
   bottom: 0;
