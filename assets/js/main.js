@@ -182,7 +182,6 @@ $(".show-more-btn").click(function () {
 
 $(function () {
   $('.popup-youtube').magnificPopup({
-    disableOn: 700,
     type: 'iframe',
     mainClass: 'mfp-fade',
     removalDelay: 160,
