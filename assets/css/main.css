@@ -1,0 +1,364 @@
+:root {
+  --primary: #6f3da9;
+  --primarylight: #847ab6;
+  --primarydark: #2c0f4e;
+  --secondary: #5c5c5c;
+  --secondarylight: #484848;
+  --secondarydark: #1c1c1c;
+  --bg_gray: #ececec;
+  --bglight: #f9f9f9;
+  --bluelight: #5db7f9;
+  --red: #f15f64;
+  --dark_gray: #a0a0a0;
+  --pinkmain: #c1539f;
+  --brownmain: #6a3819;
+}
+
+@font-face {
+  font-family: "ClementePDaiRegular";
+  src: url("../fonts/ClementePDai-Regular.woff2") format("woff2"),
+    url("../fonts/ClementePDai-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClementePDaiSemibold";
+  src: url("../fonts/ClementePDai-SemiBold.woff2") format("woff2"),
+    url("../fonts/ClementePDai-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-title {
+  font-family: "ClementePDaiRegular", sans-serif;
+}
+
+.linear-gradient-bg {
+  background: rgb(111, 61, 169);
+  background: linear-gradient(
+    90deg,
+    rgba(111, 61, 169, 1) 17%,
+    rgba(155, 208, 198, 1) 81%
+  );
+  width: 100%;
+  height: 42%;
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 94px;
+  transition: all ease-out 100ms;
+}
+
+.btn:link,
+.btn:visited {
+  position: relative;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: rgb(148, 114, 187);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 114, 187, 1) 0%,
+    rgba(155, 208, 198, 1) 100%
+  );
+}
+
+.btn-primary:hover {
+  background: rgb(62, 146, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 146, 130, 1) 0%,
+    rgba(98, 53, 151, 1) 100%
+  );
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.5rem 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 18px;
+  width: 18px;
+  -webkit-appearance: none;
+  opacity: 0.8;
+}
+
+input[type="checkbox"]:hover {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 5px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
+.inputbox {
+  padding: 10px 20px;
+  border: 2px solid var(--bg_gray);
+  background: var(--bg_gray);
+  border-radius: 5px;
+}
+
+.inputbox:focus {
+  background: #fff;
+  border: 2px solid var(--bg_gray);
+  outline: none;
+}
+
+/* expanded */
+
+.toggle-icon::before {
+  font-family: "icomoon";
+  content: "\e93c";
+  font-size: 18px;
+  font-weight: 600;
+}
+.expanded .toggle-icon::before {
+  font-family: "icomoon";
+  content: "\e93b";
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* slider */
+
+.mainslider .slickbox {
+  display: none;
+}
+
+.mainslider .slickbox:first-child {
+  display: flex;
+}
+
+.mainslider.slick-initialized .slickbox {
+  display: flex;
+}
+
+.homeslider .slick-slide {
+  margin: 16px 16px;
+}
+
+.homeslider .slick-list {
+  margin: 0 -16px;
+}
+
+.homeslider .slick-slide img {
+  display: inline-block;
+}
+
+.slick-next,
+.slick-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  z-index: 99;
+  border-radius: 100%;
+  border: 1px solid #c7c0c0;
+}
+
+.slick-next[type="button"],
+.slick-prev[type="button"] {
+  background-color: #fff;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-family: "icomoon";
+  font-size: 16px;
+  color: #c7c0c0;
+  opacity: 1;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  border: 1px solid var(--primary);
+}
+
+.slick-next:hover:before,
+.slick-prev:hover:before {
+  color: var(--primary);
+}
+
+.slick-prev {
+  left: -16px;
+}
+
+.slick-prev:before {
+  content: "\e90f";
+}
+
+.slick-next {
+  right: -16px;
+}
+
+.slick-next:before {
+  content: "\e910";
+}
+
+.slick-dots {
+  bottom: 0;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.service-box {
+  box-shadow: -10px -10px 18px 0px rgba(111, 61, 169, 0.1);
+  -webkit-box-shadow: -10px -10px 18px 0px rgba(111, 61, 169, 0.1);
+  -moz-box-shadow: -10px -10px 18px 0px rgba(111, 61, 169, 0.1);
+  transition: all ease-out 300ms;
+}
+
+.service-box:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 82, 193, 1) 0%,
+    rgba(95, 223, 241, 1) 100%
+  );
+  box-shadow: -30px -30px 18px 0px rgba(111, 61, 169, 0.1);
+  -webkit-box-shadow: -30px -30px 18px 0px rgba(111, 61, 169, 0.1);
+  -moz-box-shadow: -30px -30px 18px 0px rgba(111, 61, 169, 0.1);
+}
+
+.service-image-bg img {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 82, 193, 1) 0%,
+    rgba(95, 223, 241, 1) 100%
+  );
+  padding: 2px;
+  transition: all ease-out 300ms;
+}
+
+.service-box:hover .service-image-bg img {
+  width: 140px;
+  height: 140px;
+  padding: 4px;
+}
+
+.service-box:hover h3.font-title {
+  color: var(--primary);
+}
+
+/* expansion */
+
+.expansionWrapper .expansionlist {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.expansioncontent {
+  display: none;
+}
+
+.expansionWrapper .expansionlist:first-child .expansioncontent {
+  display: block;
+}
+
+.filterlist .accordion:after {
+  font-family: "icomoon";
+  content: "\e93b";
+  font-size: 20px;
+  float: right;
+  margin-left: 5px;
+}
+
+.filterlist .accordion.active:after {
+  content: "\e93c";
+}
+
+.viewmore_icon .icon::before {
+  font-family: "icomoon";
+  content: "\e93c";
+}
+
+.active .viewmore_icon .icon::before {
+  font-family: "icomoon";
+  content: "\e93b";
+}
+
+.footerWrapper .footerSection > div > ul li:hover a {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .drawer--top.drawer-search .drawer-nav {
+    height: 100vh;
+    padding: 0;
+    z-index: 10000;
+  }
+
+  .slider-items:hover {
+    box-shadow: none;
+  }
+
+  .btn:hover {
+    background-color: var(--primary);
+  }
+
+  .btn-white {
+    background-color: var(--primary);
+    color: #fff;
+  }
+
+  .btn-white::after {
+    background-color: var(--primary);
+  }
+
+  .btn:hover::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
