@@ -45,7 +45,7 @@
 }
 
 .hamburger-init.active {
-  z-index: 12;
+  z-index: 70;
   animation: rotateHamburger 0.5s linear 0s forwards;
 }
 
