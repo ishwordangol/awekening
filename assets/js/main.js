@@ -250,14 +250,14 @@ $(".expansionlist > a").on("click", function (e) {
   if ($(this).hasClass("active")) {
     $(this).removeClass("active");
     $(this).siblings(".expansioncontent").slideUp(200);
-    $(".expansionlist > a .iconbox")
-      .removeClass("icon-chevron-up")
-      .addClass("icon-chevron-down");
+    $(".expansionlist > a .icon-box")
+      .removeClass("fa-chevron-up")
+      .addClass("fa-chevron-down");
   } else {
-    $(".expansionlist > a .iconbox")
-      .removeClass("icon-chevron-up")
-      .addClass("icon-chevron-down");
-    $(this).find(".iconbox").removeClass("icon-chevron-down").addClass("icon-chevron-up");
+    $(".expansionlist > a .icon-box")
+      .removeClass("fa-chevron-up")
+      .addClass("fa-chevron-down");
+    $(this).find(".icon-box").removeClass("fa-chevron-down").addClass("fa-chevron-up");
     $(".expansionlist > a").removeClass("active");
     $(this).addClass("active");
     $(".expansioncontent").slideUp(200);
