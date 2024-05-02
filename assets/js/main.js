@@ -40,6 +40,25 @@ $(".mainslider").slick({
   ],
 });
 
+$(".innerslider, .mainTopic, .meetslider").slick({
+  arrows: false,
+  autoplay: false,
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        dots: false,
+        arrows: false,
+        infinite: false,
+      },
+    },
+  ],
+});
+
+
 $("#serviceSlider").slick({
   dots: false,
   infinite: true,
@@ -48,7 +67,7 @@ $("#serviceSlider").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 1000,
-  arrows: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1280,
@@ -61,6 +80,86 @@ $("#serviceSlider").slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
+$(".serviceslider").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+$(".testimonialslider").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -190,4 +289,15 @@ $(function () {
   });
 });
 
+
+$("#videoplayButton").click(function () {
+  var video = $("#myVideo").get(0);
+  if (video.paused) {
+    video.play();
+    $(this).hide();
+  } else {
+    video.pause();
+    $(this).show();
+  }
+});
 
