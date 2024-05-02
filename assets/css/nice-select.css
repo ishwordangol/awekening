@@ -1,18 +1,19 @@
 .nice-select {
   -webkit-tap-highlight-color: transparent;
-  font-size: 12px;
   background-color: #fff;
-  border: solid 1px rgb(229, 231, 235);
+  border: solid 1px #847ab6;
+  color: #5c5c5c;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
   display: block;
   float: left;
   outline: none;
-  height: 41px;
-  line-height: 41px;
+  height: 60px;
+  line-height: 60px;
   padding-left: 12px;
-  padding-right: 30px;
+  padding-right: 48px;
+  border-radius: 5px;
   position: relative;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;
@@ -38,18 +39,18 @@
 .nice-select:active,
 .nice-select.open,
 .nice-select:focus {
-  border-color: #876840;
+  border-color: #772aac;
 }
 .nice-select:after {
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
+  border-bottom: 2px solid #772aac;
+  border-right: 2px solid #772aac;
   content: "";
   display: block;
-  height: 8px;
-  margin-top: -4px;
+  height: 12px;
+  margin-top: -8px;
   pointer-events: none;
   position: absolute;
-  right: 12px;
+  right: 24px;
   top: 50%;
   -webkit-transform-origin: 66% 66%;
   -ms-transform-origin: 66% 66%;
@@ -59,7 +60,7 @@
   transform: rotate(45deg);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  width: 8px;
+  width: 12px;
 }
 .nice-select.open:after {
   -webkit-transform: rotate(-135deg);
