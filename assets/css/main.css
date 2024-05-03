@@ -178,21 +178,6 @@ input[type="checkbox"]:before {
   outline: none;
 }
 
-/* expanded */
-
-.toggle-icon::before {
-  font-family: "icomoon";
-  content: "\e93c";
-  font-size: 18px;
-  font-weight: 600;
-}
-.expanded .toggle-icon::before {
-  font-family: "icomoon";
-  content: "\e93b";
-  font-size: 18px;
-  font-weight: 600;
-}
-
 /* header */
 
 .header_main {
@@ -408,32 +393,6 @@ input[type="checkbox"]:before {
   color: #7a56a4;
 }
 
-.filterlist .accordion:after {
-  font-family: "icomoon";
-  content: "\e93b";
-  font-size: 20px;
-  float: right;
-  margin-left: 5px;
-}
-
-.filterlist .accordion.active:after {
-  content: "\e93c";
-}
-
-.viewmore_icon .icon::before {
-  font-family: "icomoon";
-  content: "\e93c";
-}
-
-.active .viewmore_icon .icon::before {
-  font-family: "icomoon";
-  content: "\e93b";
-}
-
-.footerWrapper .footerSection > div > ul li:hover a {
-  color: var(--primary);
-}
-
 @media screen and (max-width: 1366px) {
 }
 
@@ -441,33 +400,6 @@ input[type="checkbox"]:before {
 }
 
 @media screen and (max-width: 768px) {
-  .drawer--top.drawer-search .drawer-nav {
-    height: 100vh;
-    padding: 0;
-    z-index: 10000;
-  }
-
-  .slider-items:hover {
-    box-shadow: none;
-  }
-
-  .btn:hover {
-    background-color: var(--primary);
-  }
-
-  .btn-white {
-    background-color: var(--primary);
-    color: #fff;
-  }
-
-  .btn-white::after {
-    background-color: var(--primary);
-  }
-
-  .btn:hover::after {
-    display: none;
-  }
-
   .slick-dots li {
     width: 15px;
     height: 15px;
