@@ -88,7 +88,7 @@ body {
 .btn-primary {
   background: rgb(148, 114, 187);
   background: linear-gradient(
-    180deg,
+    90deg,
     rgba(148, 114, 187, 1) 0%,
     rgba(155, 208, 198, 1) 100%
   );
@@ -98,7 +98,7 @@ body {
 .btn-primary:hover {
   background: rgb(62, 146, 130);
   background: linear-gradient(
-    180deg,
+    90deg,
     rgba(62, 146, 130, 1) 0%,
     rgba(98, 53, 151, 1) 100%
   );
