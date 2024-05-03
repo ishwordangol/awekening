@@ -50,7 +50,7 @@ body {
 .linear-gradient-bg {
   background: rgb(111, 61, 169);
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(111, 61, 169, 1) 17%,
     rgba(155, 208, 198, 1) 81%
   );
@@ -87,7 +87,7 @@ body {
 .btn-primary {
   background: rgb(148, 114, 187);
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(148, 114, 187, 1) 0%,
     rgba(155, 208, 198, 1) 100%
   );
@@ -97,7 +97,7 @@ body {
 .btn-primary:hover {
   background: rgb(62, 146, 130);
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(62, 146, 130, 1) 0%,
     rgba(98, 53, 151, 1) 100%
   );
@@ -112,7 +112,7 @@ body {
 .btn-white:hover {
   background: rgb(62, 146, 130);
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(62, 146, 130, 1) 0%,
     rgba(98, 53, 151, 1) 100%
   );
@@ -308,6 +308,14 @@ input[type="checkbox"]:before {
   margin-bottom: 0;
 }
 
+.mainTopic .slick-track .slick-slide > div {
+  min-height: 150px;
+}
+
+.mainTopic .slick-track .slick-dots {
+  bottom: 0;
+}
+
 .meetslider .slick-list .slickbox img,
 .serviceslider .slick-list .slickbox img,
 .testimonial-content,
@@ -328,7 +336,7 @@ input[type="checkbox"]:before {
 
 .service-box:hover {
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(177, 82, 193, 1) 0%,
     rgba(95, 223, 241, 1) 100%
   );
@@ -339,7 +347,7 @@ input[type="checkbox"]:before {
 
 .service-image-bg img {
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(177, 82, 193, 1) 0%,
     rgba(95, 223, 241, 1) 100%
   );
@@ -455,7 +463,21 @@ input[type="checkbox"]:before {
   .btn:hover::after {
     display: none;
   }
+
+  .slick-dots li {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px;
+    color: #d9d9d9;
+    opacity: 1;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
+  .mainTopic .slick-track .slick-slide > div {
+    min-height: auto;
+  }
 }

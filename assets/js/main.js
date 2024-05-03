@@ -40,7 +40,7 @@ $(".mainslider").slick({
   ],
 });
 
-$(".innerslider, .mainTopic, .meetslider").slick({
+$(".innerslider, .meetslider").slick({
   arrows: false,
   autoplay: false,
   dots: true,
@@ -52,6 +52,7 @@ $(".innerslider, .mainTopic, .meetslider").slick({
       settings: {
         arrows: false,
         infinite: false,
+        dots: false,
       },
     },
   ],
@@ -138,6 +139,50 @@ $(".serviceslider").slick({
   ],
 });
 
+$(".chooseCourseSlider").slick({
+  dots: true,
+  rows: 2,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 $(".testimonialslider").slick({
   dots: true,
   infinite: true,
@@ -181,9 +226,9 @@ $(".testimonialslider").slick({
   ],
 });
 
-$(".chooseCourseSlider").slick({
+$(".mainTopic").slick({
   dots: true,
-  rows: 2,
+  rows: 4,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
