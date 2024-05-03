@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Course Detail</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/drawer.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="py-2.5 header_main z-40">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <a href="index.html" aria-label="Logo Link" class="logo">
+            <img
+              src="assets/images/logo_awekening.png"
+              alt="Awekening Logo"
+              class="w-full"
+            />
+          </a>
+
+          <nav>
+            <div>
+              <div>
+                <ul class="flex items-center gap-5">
+                  <li class="hidden lg:block">
+                    <a
+                      href="newtothetahealing.html"
+                      aria-label="Nav Link"
+                      class="text-primarylight uppercase font-bold text-xs hover:text-pinkmain"
+                      >New to Theta Healing</a
+                    >
+                  </li>
+                  <li class="hidden lg:block">
+                    <a
+                      href="already-a-practitioner.html"
+                      aria-label="Nav Link"
+                      class="text-primarylight uppercase font-bold text-xs hover:text-pinkmain"
+                      >Already a Practitioner
+                    </a>
+                  </li>
+                  <li class="hidden lg:block">
+                    <a
+                      href="become-an-instructor.html"
+                      aria-label="Nav Link"
+                      class="text-primarylight uppercase font-bold text-xs hover:text-pinkmain"
+                      >Become an Instructor</a
+                    >
+                  </li>
+                  <li class="hidden lg:block">
+                    <a
+                      href="book-a-session.html"
+                      aria-label="Nav Link"
+                      class="text-primarylight uppercase font-bold text-xs hover:text-pinkmain"
+                      >Book a Session</a
+                    >
+                  </li>
+                  <li>
+                    <div class="hamburgercontainer hamburger-guide">
+                      <div class="hamburger-init">
+                        <span class="bar top-bar"></span>
+                        <span class="bar middle-bar"></span>
+                        <span class="bar bottom-bar"></span>
+                      </div>
+                      <div class="menu-wrapper">
+                        <div class="relative block w-full h-full">
+                          <img
+                            src="assets/images/navlogo.svg"
+                            alt="Awekening Logo"
+                            class="menulogo absolute left-0 h-1/4 lg:h-2/4 xl:h-auto"
+                          />
+                          <div class="relative container h-full">
+                            <div class="menu">
+                              <h1
+                                class="menuTitle text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-4 md:mb-8 lg:mb-16"
+                              >
+                                MENU
+                              </h1>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="newtothetahealing.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >New to Theta Healing</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="already-a-practitioner.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >Already a Practitioner
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="become-an-instructor.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >Become an Instructor</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="book-a-session.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >Book a Session</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="faq.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >FAQ</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="contactus.html"
+                                    aria-label="Nav Link"
+                                    class="block text-white uppercase font-semibold text-xl lg:text-2xl mb-4 md:mb-8 lg:mb-10 hover:text-primary"
+                                    >Contact US</a
+                                  >
+                                </li>
+                              </ul>
+
+                              <div class="mt-5 border-t border-white pt-8">
+                                <h5 class="uppercase text-xs text-white">
+                                  Member Login
+                                </h5>
+                                <div class="flex gap-4 mt-4">
+                                  <a
+                                    href="https://www.facebook.com/"
+                                    aria-label="FB Link"
+                                    target="_blank"
+                                  >
+                                    <i
+                                      class="fa-brands fa-square-facebook text-white text-2xl"
+                                    ></i
+                                  ></a>
+                                  <a
+                                    href="https://www.instagram.com/"
+                                    aria-label="Instagram Link"
+                                    target="_blank"
+                                  >
+                                    <i
+                                      class="fa-brands fa-instagram text-white text-2xl"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img
+                            src="assets/images/navlogotext.svg"
+                            alt="Awekening Logo Text"
+                            class="menulogotext absolute left-0 bottom-0 h-10 md:h-20 xl:h-auto"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- End of header section -->
+
+    <section class="py-8 md:py-12 lg:py-20">
+      <div class="breadcrumbWrapper">
+        <div class="container">
+          <div class="max-w-5xl mx-auto">
+            <ol class="inline-flex items-center space-x-1">
+              <li class="inline-flex items-center">
+                <a
+                  href="index.html"
+                  class="uppercase items-center text-xs text-primarylight hover:text-primary"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <span
+                    class="mt-1 pr-2 block fa-solid fa-chevron-right text-xs text-primarylight"
+                  >
+                  </span>
+                  <a
+                    href="#"
+                    class="uppercase items-center text-xs text-primary"
+                    >Foundation level 1</a
+                  >
+                </div>
+              </li>
+            </ol>
+
+            <div class="py-8 lg:py-12">
+              <div class="flex flex-wrap gap-4 lg:gap-9 items-start">
+                <div class="w-full lg:w-auto">
+                  <img
+                    src="assets/images/courses/basic-course.png"
+                    alt="Basic Course"
+                    class="w-auto h-60"
+                  />
+                </div>
+                <div class="w-full lg:flex-1">
+                  <h1
+                    class="font-title text-primarylight text-3xl lg:text-4xl tracking-wider"
+                  >
+                    Foundation Level 1
+                  </h1>
+                  <div class="mt-5">
+                    <h4 class="font-medium text-secondarydark">
+                      Pre-requisites: None
+                    </h4>
+                    <h4 class="font-medium text-secondarydark">
+                      Date : 24 Feb - 28 Feb 2024 | Time : 10:00 - 17:00
+                    </h4>
+                    <h4 class="font-medium text-secondarydark">
+                      Venue Available : Online or In-Person
+                    </h4>
+                  </div>
+
+                  <div class="course-description mt-8">
+                    <p>Course details...</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo con Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatuExcepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim
+                      id es Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, to Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                      fugit, sed quia consequuntur ma Neque porro quisquam est,
+                      qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed qu Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam,
+                      nisi ut al
+                    </p>
+
+                    <ul class="pl-5 mt-8 list-disc space-y-2.5">
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo con Duis aute irure dolor
+                        in reprehenderit in
+                      </li>
+                      <li>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, to Nemo
+                        enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur ma Neque porro
+                        quisquam
+                      </li>
+                    </ul>
+                    <h2 class="font-semibold text-2xl text-secondarydark my-8">
+                      We are confident that all our classes offer enough
+                      practice to put you in the right motion for an immediate
+                      change.
+                    </h2>
+                    <button type="button" class="btn btn-primary text-white">
+                      BOOK THIS COURSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 md:py-14 lg:py-28 bg-bglight">
+      <div class="container">
+        <div class="px-8 max-w-5xl mx-auto">
+          <h1
+            class="font-title text-primarylight text-3xl lg:text-4xl tracking-wider"
+          >
+            Similar Courses
+          </h1>
+          <div class="py-8 lg:py-10 similarcourseourse sliderWrapper">
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/basic-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 1
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Basic Practitioner
+                </h2>
+                <p class="mt-5">
+                  Learn how to connect to the Theta brain wave, Theta brain
+                  wave,
+                </p>
+
+                <div class="my-8"><h5>Pre-requisites: None</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/advanced-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 2
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Advanced Practitioner
+                </h2>
+                <p class="mt-5">
+                  Expand on the Basic knowledge with many more tools to heal
+                  further.
+                </p>
+
+                <div class="my-8"><h5>Pre requisites: Basic</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/dig-deeper-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 3
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Dig deeper Practitioner
+                </h2>
+                <p class="mt-5">
+                  Learn how to dig efficiently to locate the root of the issue.
+                  locate the root.
+                </p>
+
+                <div class="my-8"><h5>Pre-requisites: Advanced</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/basic-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 1
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Basic Practitioner
+                </h2>
+                <p class="mt-5">
+                  Learn how to connect to the Theta brain wave, Theta brain
+                  wave,
+                </p>
+
+                <div class="my-8"><h5>Pre-requisites: None</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/advanced-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 2
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Advanced Practitioner
+                </h2>
+                <p class="mt-5">
+                  Expand on the Basic knowledge with many more tools to heal
+                  further.
+                </p>
+
+                <div class="my-8"><h5>Pre requisites: Basic</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+            <div
+              class="slickbox relative overflow-hidden courses p-8 bg-white rounded-xl"
+            >
+              <div class="relative">
+                <img
+                  src="assets/images/courses/dig-deeper-course.png"
+                  alt="Basic Course"
+                  class="w-full h-auto md:h-36"
+                />
+                <div class="absolute top-0 right-0">
+                  <i class="fa-regular fa-heart text-primary"></i>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="font-titlebold text-xl text-primary">
+                  Foundation level 3
+                </h2>
+                <h2 class="font-titlebold text-xl text-secondarylight">
+                  Dig deeper Practitioner
+                </h2>
+                <p class="mt-5">
+                  Learn how to dig efficiently to locate the root of the issue.
+                  locate the root.
+                </p>
+
+                <div class="my-8"><h5>Pre-requisites: Advanced</h5></div>
+                <button type="button" class="w-full btn btn-primary text-white">
+                  BOOK THIS COURSE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 md:py-11 lg:py-22">
+      <div class="container">
+        <div class="flex justify-center">
+          <div class="max-w-[704px]">
+            <h1
+              class="text-center font-title text-3xl md:text-4xl tracking-wider text-primarylight"
+            >
+              Discover Thetahealing
+            </h1>
+            <h2
+              class="text-center font-semibold text-xl md:text-2xl text-secondarydark"
+            >
+              Subscribe to get weekly newsletter
+            </h2>
+            <div class="mt-7 lg:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                type="text"
+                class="col-span-2 sm:col-span-1 inputbox"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                class="col-span-2 sm:col-span-1 inputbox"
+                placeholder="Last Name"
+              />
+              <input
+                type="email"
+                class="col-span-2 inputbox"
+                placeholder="Email Address"
+              />
+              <button
+                type="button"
+                class="col-span-2 btn btn-primary text-white"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative z-10 bg-bglight">
+      <section
+        class="footerWrapper relative py-7 lg:pt-14 lg:pb-12 leading-none"
+      >
+        <div class="container">
+          <div
+            class="text-secondary footerSection grid grid-cols-1 md:grid-cols-12 gap-7 lg:gap-10"
+          >
+            <div
+              class="grid grid-cols-1 xs:grid-cols-8 lg:grid-cols-11 md:col-span-8 lg:col-span-10 gap-4 lg:gap-7"
+            >
+              <div class="xs:col-span-4 lg:col-span-3">
+                <h3
+                  class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl"
+                >
+                  New to Theta Healing?
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Theta Healing"
+                      class="hover:text-primary"
+                      >Start your Journey</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Theta Healing"
+                      class="hover:text-primary"
+                      >Workshop Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Theta Healing"
+                      class="hover:text-primary"
+                      >Testimonials</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="xs:col-span-4 lg:col-span-3">
+                <h3
+                  class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl"
+                >
+                  Already a Practitioner?
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Practitioner"
+                      class="hover:text-primary"
+                      >Basic Practitioner</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Practitioner"
+                      class="hover:text-primary"
+                      >Advanced Practitioner</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Practitioner"
+                      class="hover:text-primary"
+                      >Dig Deep Practitioner</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Practitioner"
+                      class="hover:text-primary"
+                      >Specialized Practitioner</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="xs:col-span-4 lg:col-span-3">
+                <h3
+                  class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl"
+                >
+                  Become an Instructor
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Instructor"
+                      class="hover:text-primary"
+                      >Teaching ThetaHealing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Instructor"
+                      class="hover:text-primary"
+                      >Create a Solid Career</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Instructor"
+                      class="hover:text-primary"
+                      >Blogs/Articles</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="xs:col-span-4 lg:col-span-2">
+                <h3
+                  class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl"
+                >
+                  Book a Session
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Book a Session"
+                      class="hover:text-primary"
+                      >60 min with Maya</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Footer Book a Session"
+                      class="hover:text-primary"
+                      >90 min with Tony</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="md:col-span-4 lg:col-span-2 flex flex-col border-l border-secondary pl-10"
+            >
+              <a
+                href="faq.html"
+                class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl hover:text-primary"
+                >FAQ</a
+              >
+              <a
+                href="contactus.html"
+                class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl hover:text-primary"
+                >Contact Us</a
+              >
+              <a
+                href="signin.html"
+                class="font-title mb-6 whitespace-nowrap text-xl xl:text-2xl hover:text-primary"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <section class="relative copyright py-2.5 bg-primarylight">
+      <div class="container">
+        <div
+          class="inline-grid grid-cols-1 sm:grid-cols-2 w-full gap-2 sm:gap-0"
+        >
+          <div
+            class="flex items-center justify-center order-last sm:order-first sm:justify-start"
+          >
+            <p class="text-center text-xs text-white uppercase lg:text-left">
+              © Awakening. All Rights Reserved 2024
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center order-first sm:order-last md:justify-end"
+          >
+            <ul class="flex gap-1">
+              <li>
+                <a
+                  href="#"
+                  class="uppercase text-white text-xs hover:text-primary"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="uppercase text-white text-xs hover:text-primary"
+                  ><span class="px-1">&#x2022;</span> Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="uppercase text-white text-xs hover:text-primary"
+                  ><span class="px-1">&#x2022;</span> Terms & Condition</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

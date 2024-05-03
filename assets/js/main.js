@@ -183,6 +183,50 @@ $(".chooseCourseSlider").slick({
   ],
 });
 
+$(".similarcourseourse").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 $(".testimonialslider").slick({
   dots: true,
   infinite: true,

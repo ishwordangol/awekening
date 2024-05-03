@@ -37,6 +37,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  color: var(--secondarylight);
 }
 
 .font-title {
@@ -217,14 +218,16 @@ input[type="checkbox"]:before {
 .homeslider .slick-slide,
 .serviceslider .slick-slide,
 .testimonialslider .slick-slide,
-.chooseCourseSlider .slick-slide {
+.chooseCourseSlider .slick-slide,
+.similarcourseourse .slick-slide {
   margin: 16px 16px;
 }
 
 .homeslider .slick-list,
 .serviceslider .slick-list,
 .testimonialslider .slick-list,
-.chooseCourseSlider .slick-list {
+.chooseCourseSlider .slick-list,
+.similarcourseourse .slick-list {
   margin: 0 -16px;
 }
 
