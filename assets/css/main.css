@@ -323,7 +323,8 @@ input[type="checkbox"]:before {
 .serviceslider .slick-list .slickbox img,
 .testimonial-content,
 .testimonial-content > img,
-.video-container {
+.video-container,
+.mycourse {
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(180deg, #c1539f, #5fdff1) border-box;
   border: 2px solid transparent;
