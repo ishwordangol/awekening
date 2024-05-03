@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Dashboard</title>
+    <title>Settings</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -214,61 +214,105 @@
             </h2>
             <nav>
               <div class="flex items-center space-x-4 sm:space-x-9">
-                <a href="dashboard.html" class="text-pinkmain underline"
+                <a href="dashboard.html" class="text-primarylight"
                   >My Courses</a
                 >
                 <a href="wishlist.html" class="text-primarylight">Wishlist</a>
-                <a href="settings.html" class="text-primarylight">Settings</a>
+                <a href="settings.html" class="text-pinkmain underline"
+                  >Settings</a
+                >
               </div>
             </nav>
           </div>
           <div class="mt-12">
-            <p>Here is your upcoming course(s)</p>
-            <div class="mt-9 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="p-8 mycourse bg-white rounded-xl">
-                <div class="relative">
-                  <img
-                    src="assets/images/courses/basic-course.png"
-                    alt="Basic Course"
-                    class="h-18 md:h-36"
+            <p>You can change your information's here.</p>
+
+            <div class="mt-9 w-full grid grid-cols-2 gap-4">
+              <div class="col-span-2 sm:col-span-1">
+                <input
+                  type="text"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <input
+                  type="text"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="col-span-2">
+                <input
+                  type="email"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-span-2">
+                <input
+                  type="password"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="Old Password"
+                />
+              </div>
+
+              <div class="col-span-2 sm:col-span-1">
+                <input
+                  type="password"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="New Password"
+                />
+              </div>
+
+              <div class="col-span-2 sm:col-span-1">
+                <input
+                  type="password"
+                  class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                  placeholder="Confirm New Password"
+                />
+              </div>
+              </div>
+
+              <div class="mt-14 w-full grid grid-cols-2 gap-4">
+                <h4 class="col-span-2 font-semibold text-lg">Your Address</h4>
+                <div class="col-span-2 sm:col-span-1">
+                  <input
+                    type="text"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Country"
                   />
                 </div>
-                <div class="mt-8">
-                  <h2 class="font-titlebold text-xl text-primary">
-                    Foundation level 1
-                  </h2>
-                  <h2 class="font-titlebold text-xl text-secondarylight">
-                    Basic Practitioner
-                  </h2>
-                  <ol class="mt-8">
-                    <li>Pre-requisites: None</li>
-                    <li>Date : 24 Mar 2024 Time :10am - 5pm</li>
-                    <li>Class : In-Person</li>
-                    <li>Instructor : Maya</li>
-                  </ol>
-                  <div
-                    class="my-8 flex flex-wrap items-center justify-between gap-4"
-                  >
-                    <a
-                      href="#"
-                      class="block text-primary text-xs font-bold uppercase tracking-[1.2px] hover:text-pinkmain"
-                      >Learn More</a
-                    >
-                    <a
-                      href="#"
-                      class="block text-primary text-xs font-bold uppercase tracking-[1.2px] hover:text-pinkmain"
-                      >View Location Map</a
-                    >
-                  </div>
-
-                  <button
-                    type="button"
-                    class="w-full btn btn-primary text-white"
-                  >
-                    Add to calendar
-                  </button>
+                <div class="col-span-2 sm:col-span-1">
+                  <input
+                    type="number"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Phone Number"
+                  />
                 </div>
-              </div>
+                <div class="col-span-2">
+                  <input
+                    type="Address"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-span-2">
+                  <input
+                    type="text"
+                    class="w-full py-2.5 px-5 bg-white border border-bg-gray rounded-md outline-none focus:border-primary"
+                    placeholder="Postal Code"
+                  />
+                </div>
+                </div>
+             
+
+              <button
+                type="button"
+                class="min-w-60 btn btn-primary text-white mt-4"
+              >
+                Save
+              </button>
             </div>
           </div>
         </div>
