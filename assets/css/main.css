@@ -76,7 +76,11 @@ body {
   text-transform: uppercase;
   border-radius: 94px;
   letter-spacing: 1.8px;
-  transition: all ease-out 400ms;
+  -moz-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .btn:link,
@@ -96,7 +100,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: rgb(62, 146, 130);
+  background-color: rgb(62, 146, 130);
   background: linear-gradient(
     90deg,
     rgba(62, 146, 130, 1) 0%,
