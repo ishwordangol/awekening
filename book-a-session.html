@@ -209,9 +209,9 @@
         class="innerbannerbox relative overflow-hidden bg-bglight w-full h-[820px]"
       >
         <div
-          class="container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="container px-8 lg:px-22 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
-          <div class="max-w-5xl mx-auto">
+          <div class="px-8 lg:px-18">
             <a
               class="popup-youtube flex items-center gap-3 text-primarylight mb-8 text-xs font-bold uppercase tracking-widest"
               href="https://www.youtube.com/watch?v=D0UnqGm_miA"
@@ -244,11 +244,11 @@
       </div>
     </section>
 
-    <section class="pt-8 md:pt-14 lg:pt-28">
-      <div class="container">
-        <div class="max-w-5xl mx-auto">
+    <section class="pt-16 lg:pt-28">
+      <div class="container px-8 lg:px-22">
+        <div class="px-8 lg:px-18">
           <div
-            class="lg:px-28 grid grid-cols-1 place-items-center lg:grid-cols-3 gap-9 lg:gap-14"
+            class="grid grid-cols-1 place-items-center lg:grid-cols-3 gap-9 lg:gap-14"
           >
             <img
               src="assets/images/logo-light.svg"
@@ -289,12 +289,12 @@
       </div>
     </section>
 
-    <section class="py-8 md:py-11 lg:py-22">
+    <section class="py-16 lg:py-22">
       <div class="container">
         <div class="flex justify-center">
-          <div class="min-w-[704px]">
+          <div class="w-full md:w-auto md:min-w-[704px]">
             <h1
-              class="text-center font-title text-3xl md:text-4xl tracking-wider text-primarylight"
+              class="text-center font-title text-3xl md:text-4xl leading-[104%] tracking-[1.08px] text-primarylight"
             >
               Discover Thetahealing
             </h1>
@@ -331,11 +331,11 @@
       </div>
     </section>
 
-    <footer class="relative z-10 bg-bglight">
+    <footer class="hidden md:block relative z-10 bg-bglight">
       <section
         class="footerWrapper relative py-7 lg:pt-14 lg:pb-12 leading-none"
       >
-        <div class="container">
+        <div class="xl:px-22 container">
           <div
             class="text-secondary footerSection grid grid-cols-1 md:grid-cols-12 gap-7 lg:gap-10"
           >
@@ -502,38 +502,42 @@
     <section class="relative copyright py-2.5 bg-primarylight">
       <div class="container">
         <div
-          class="inline-grid grid-cols-1 sm:grid-cols-2 w-full gap-2 sm:gap-0"
+          class="inline-grid grid-cols-1 md:grid-cols-2 w-full gap-2 md:gap-0"
         >
           <div
-            class="flex items-center justify-center order-last sm:order-first sm:justify-start"
+            class="flex flex-wrap items-center justify-center order-last md:order-first md:justify-start"
           >
-            <p class="text-center text-xs text-white uppercase lg:text-left">
+            <p
+              class="text-center text-xs text-white uppercase lg:text-left tracking-[1.2px] font-bold"
+            >
               © Awakening. All Rights Reserved 2024
             </p>
           </div>
           <div
-            class="flex items-center justify-center order-first sm:order-last md:justify-end"
+            class="hidden md:flex flex-wrap items-center justify-center order-first md:order-last md:justify-end"
           >
-            <ul class="flex gap-1">
+            <ul class="flex flex-wrap gap-1">
               <li>
                 <a
                   href="#"
-                  class="uppercase text-white text-xs hover:text-primary"
+                  class="uppercase text-white text-xs hover:text-primary tracking-[1.2px] font-bold"
                   >Privacy</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="uppercase text-white text-xs hover:text-primary"
-                  ><span class="px-1">&#x2022;</span> Cookie Policy</a
+                  class="uppercase text-white text-xs hover:text-primary tracking-[1.2px] font-bold"
+                  ><span class="px-1 text-white">&#x2022;</span> Cookie
+                  Policy</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="uppercase text-white text-xs hover:text-primary"
-                  ><span class="px-1">&#x2022;</span> Terms & Condition</a
+                  class="uppercase text-white text-xs hover:text-primary tracking-[1.2px] font-bold"
+                  ><span class="px-1 text-white">&#x2022;</span> Terms &
+                  Condition</a
                 >
               </li>
             </ul>
