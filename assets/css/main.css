@@ -88,16 +88,36 @@ body {
 .btn-primary {
   background: linear-gradient(
     90deg,
-    rgba(148, 114, 187, 1) 0%,
-    rgba(155, 208, 198, 1) 100%
+    rgba(98, 53, 151, 1) 0%,
+    rgba(62, 146, 130, 1) 100%
   );
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.btn-primary::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -10;
+  border-radius: 94px;
+  transition: opacity 0.5s ease-out;
+}
+
+.btn-primary:hover,
+.btn-primary:hover::before {
+  opacity: 1;
 }
 
 .btn-white {
   background: #fff;
 }
 
-.btn-primary::before,
 .btn-white::before {
   content: "";
   position: absolute;
@@ -214,6 +234,10 @@ nav a[aria-label="Nav Link"] {
   letter-spacing: 1.2px;
 }
 
+.menu ul li > a,
+.copyright a {
+  transition: all linear 0.2s;
+}
 /* slider */
 
 .mainslider .slickbox {
