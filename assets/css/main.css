@@ -85,7 +85,7 @@ body {
   transition: all linear 0.4s;
 }
 
-.btn-primary {
+/* .btn-primary {
   background: linear-gradient(
     90deg,
     rgba(98, 53, 151, 1) 0%,
@@ -114,6 +114,24 @@ body {
   opacity: 1;
 }
 
+.btn-primary::before {
+  background: linear-gradient(
+    90deg,
+    rgba(148, 114, 187, 1) 0%,
+    rgba(155, 208, 198, 1) 100%
+  );
+}
+
+
+.btn-primary:hover,
+.btn-primary:hover::before {
+  background: linear-gradient(
+    90deg,
+    rgba(62, 146, 130, 1) 0%,
+    rgba(98, 53, 151, 1) 100%
+  );
+} */
+
 .btn-white {
   background: #fff;
 }
@@ -130,25 +148,8 @@ body {
   transition: background 100ms ease-out;
 }
 
-.btn-primary::before {
-  background: linear-gradient(
-    90deg,
-    rgba(148, 114, 187, 1) 0%,
-    rgba(155, 208, 198, 1) 100%
-  );
-}
-
 .btn-white::before {
   background: linear-gradient(60deg, #7a56a4, #9bd0c6);
-}
-
-.btn-primary:hover,
-.btn-primary:hover::before {
-  background: linear-gradient(
-    90deg,
-    rgba(62, 146, 130, 1) 0%,
-    rgba(98, 53, 151, 1) 100%
-  );
 }
 
 .btn-white:hover,
@@ -159,6 +160,43 @@ body {
     rgba(98, 53, 151, 1) 100%
   );
   color: #fff;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(148, 114, 187, 1) 0%,
+    rgba(155, 208, 198, 1) 100%
+  );
+  position: relative;
+  padding: 16px 24px;
+  z-index: 10;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:after {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 208, 198, 1) 0%,
+    rgba(148, 114, 187, 1) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -10;
+  transition: opacity 0.5s;
+  border-radius: 94px;
+}
+
+.btn-primary:hover:after {
+  opacity: 1;
 }
 
 .checkbox {
